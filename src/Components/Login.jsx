@@ -47,7 +47,7 @@ function Login({user,setUser}) {
     window.confirmationResult
       .confirm(otp.current.value)
       .then(async (res) => {
-        const loggedInResponse = await fetch("http://localhost:3001/firebase", {
+        const loggedInResponse = await fetch("https://happiebirthday.onrender.com/firebase", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(res),

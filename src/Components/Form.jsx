@@ -17,7 +17,7 @@ function Form({user}) {
             nam:nam.current.value,
             mobile:user[1]
         }
-        const loggedInResponse = await fetch("http://localhost:3001/", {
+        const loggedInResponse = await fetch("https://happiebirthday.onrender.com/", {
           method: "POST",
           headers: { "Content-Type": "application/json",Authorization:`Bearer ${user[0]}` },
           body: JSON.stringify(data),
